@@ -1,0 +1,50 @@
+# NB: don't set `language: haskell` here
+
+# See also https://github.com/hvr/multi-ghc-travis for more information
+
+branches:
+  only:
+    - source
+
+env:
+  global:
+    - GH_NAME="Travis on behalf of IMOKURI"
+    - secure: "d3DnF7a3XJe6QaT0pJCx71By5oLRP1C4J0LTRXq7wGzzBX3MzcZspTsHMePGe0nb4EmjMZGkm24JQc5XBL8Y+RbnNG3YVy5gqGNfEuDdo30ZhRxUmMf0sfnFrOwd0zHMERxxGnadLp+eAq19eLP/3fLI4saPyCdJ+pJP6Q5Lb7Q="
+    - secure: "NNT954S2CB/WXehALnFHrhTEOLjwZ/w4s7NLiIgE6OjwzoC/rEobK56o3YV+9IFJw/M7jDQ55c5TRK+Im6/NqMhFjtGNCqP1pc71oYh9xOhCm3B/sUR0sKLLE6S4ofBy/2nZ7062NjNMYA5N1Pea131ibo+/er+2qhDgTFtcwI4="
+
+  matrix:
+    - CABALVER=1.20 GHCVER=7.8.3
+#    - CABALVER=1.22 GHCVER=7.10.1
+#    - CABALVER=head GHCVER=head
+
+before_install:
+  - travis_retry sudo add-apt-repository -y ppa:hvr/ghc
+  - travis_retry sudo apt-get update
+  - travis_retry sudo apt-get install cabal-install-$CABALVER ghc-$GHCVER
+  - export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
+
+  - git submodule foreach --recursive 'git checkout master; git ls-files | grep -v README | grep -v CNAME | xargs -r git rm'
+
+install:
+  - travis_retry cabal update
+  - cabal sandbox init
+  - cabal install --only-dependencies --disable-documentation
+  - cabal configure --disable-library-profiling --disable-tests --disable-library-coverage --disable-benchmarks --disable-split-objs
+
+before_script:
+  - git config --global user.name "$GH_NAME"
+  - git config --global user.email "$GH_EMAIL"
+
+script:
+  - cabal run -j build
+
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "source" ]]; then
+    cd _site;
+    export REMOTE=$(git config remote.origin.url | sed 's/.*:\/\///');
+    git remote add github https://${GH_TOKEN}@${REMOTE};
+    git add --all;
+    git status;
+    git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER )";
+    git push github master:master | grep -v http;
+    fi

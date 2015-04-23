@@ -8,10 +8,9 @@ branches:
 
 env:
   global:
-    - GH_TOKEN:
-      secure: Npoh5cs55HkjhanWF2wHnf7VvHGZMwewJ4O24hegnuK+/Y5L4TiloUJQaj871MaG1gNekQ/0+lV67VBGNDU3wK3hyjQ9JbRobnpT2wzzqTdJ50r4hoPfCVK2xA/FsMm7AqbrVewKtQmKw2xfrJPtGng4PwVBIqmJlif5AJEcN9Y=
-    - GH_EMAIL="sam.ellard@gmail.com"
-    - GH_NAME="redllamas"
+    - secure: uBFGVYMKELBVEjb5Y6OlRFQrW6y2BGRg2vJTzw3wLPKGWaZQ89PBk4MMFKqhVnQROA/Q4j+LEYu/H/aM2CR2UjAPqNC6ubSiHNnoq/VuS2tJ6YnOZDZfbrrXiFCKLhBi8o17qJml18+4Q+Nr2/pZo2/O+jhp/ADpfWXYBBI9EoU=
+    - secure: "p7gBzSHIYKLb8CS3dcAQ3uIGszeYzy+Jcys0IsxUAPH3ejzHV84a4Gq4TlvDSj6mK8+wAUPi38avrQE66Wy/PxL+5zGZfbqd9PlEKgHP1XvwxeZEg9j7Lt5mlou6sTMnglW67JztcdVe5n21m1wzd+IzvACp1qqJB7MFXYPD+/4="
+    - secure: "PXntq20v7BwrE8dzjCN5ZHka94zXE96Z5hGwEph94JQqPGpvwSuB4xsMAz+3TBn/FYitVA89qZA8d1qDkKqdf9ssG9+rZnt79WQJluM67MxlkQx3PKjxiBjAuoRTl8yRCflMLRb4TOfcMgAN4PoW5PxToiR0423u2Q90tRJAczM="
 
   matrix:
     - CABALVER=1.20 GHCVER=7.8.3
@@ -43,7 +42,7 @@ after_success:
   - if [[ "$TRAVIS_BRANCH" == "source" ]]; then
     cd _site;
     export REMOTE=$(git config remote.origin.url | sed 's/.*:\/\///');
-    git remote add github https://${GH_NAME}:${GH_TOKEN}@${REMOTE};
+    git remote add github https://redllamas:${GH_TOKEN}@${REMOTE};
     git add --all;
     git status;
     git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER )";

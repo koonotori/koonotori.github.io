@@ -1,50 +1,34 @@
-# NB: don't set `language: haskell` here
-
-# See also https://github.com/hvr/multi-ghc-travis for more information
-
 branches:
   only:
-    - source
-
-env:
-  global:
-    - GH_NAME="Travis on behalf of IMOKURI"
-    - secure: "d3DnF7a3XJe6QaT0pJCx71By5oLRP1C4J0LTRXq7wGzzBX3MzcZspTsHMePGe0nb4EmjMZGkm24JQc5XBL8Y+RbnNG3YVy5gqGNfEuDdo30ZhRxUmMf0sfnFrOwd0zHMERxxGnadLp+eAq19eLP/3fLI4saPyCdJ+pJP6Q5Lb7Q="
-    - secure: "NNT954S2CB/WXehALnFHrhTEOLjwZ/w4s7NLiIgE6OjwzoC/rEobK56o3YV+9IFJw/M7jDQ55c5TRK+Im6/NqMhFjtGNCqP1pc71oYh9xOhCm3B/sUR0sKLLE6S4ofBy/2nZ7062NjNMYA5N1Pea131ibo+/er+2qhDgTFtcwI4="
-
+  - source
   matrix:
-    - CABALVER=1.20 GHCVER=7.8.3
-#    - CABALVER=1.22 GHCVER=7.10.1
-#    - CABALVER=head GHCVER=head
-
+  - CABALVER=1.20 GHCVER=7.8.3
 before_install:
-  - travis_retry sudo add-apt-repository -y ppa:hvr/ghc
-  - travis_retry sudo apt-get update
-  - travis_retry sudo apt-get install cabal-install-$CABALVER ghc-$GHCVER
-  - export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
-
-  - git submodule foreach --recursive 'git checkout master; git ls-files | grep -v README | grep -v CNAME | xargs -r git rm'
-
+- travis_retry sudo add-apt-repository -y ppa:hvr/ghc
+- travis_retry sudo apt-get update
+- travis_retry sudo apt-get install cabal-install-$CABALVER ghc-$GHCVER
+- export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
+- git submodule foreach --recursive 'git checkout master; git ls-files | grep -v README
+  | grep -v CNAME | xargs -r git rm'
 install:
-  - travis_retry cabal update
-  - cabal sandbox init
-  - cabal install --only-dependencies --disable-documentation
-  - cabal configure --disable-library-profiling --disable-tests --disable-library-coverage --disable-benchmarks --disable-split-objs
-
+- travis_retry cabal update
+- cabal sandbox init
+- cabal install --only-dependencies --disable-documentation
+- cabal configure --disable-library-profiling --disable-tests --disable-library-coverage
+  --disable-benchmarks --disable-split-objs
 before_script:
-  - git config --global user.name "redllamas"
-  - git config --global user.email "sam.ellard@gmail.com"
-
+- git config --global user.name "redllamas"
+- git config --global user.email "sam.ellard@gmail.com"
 script:
-  - cabal run -j build
-
+- cabal run -j build
 after_success:
-  - if [[ "$TRAVIS_BRANCH" == "source" ]]; then
-    cd _site;
-    export REMOTE=$(git config remote.origin.url | sed 's/.*:\/\///');
-    git remote add github https://${GH_TOKEN}@${REMOTE};
-    git add --all;
-    git status;
-    git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER )";
-    git push github master:master | grep -v http;
-    fi
+- if [[ "$TRAVIS_BRANCH" == "source" ]]; then cd _site; export REMOTE=$(git config
+  remote.origin.url | sed 's/.*:\/\///'); git remote add github https://${GH_TOKEN}@${REMOTE};
+  git add --all; git status; git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER
+  )"; git push github master:master | grep -v http; fi
+GH_TOKEN:
+  secure: Npoh5cs55HkjhanWF2wHnf7VvHGZMwewJ4O24hegnuK+/Y5L4TiloUJQaj871MaG1gNekQ/0+lV67VBGNDU3wK3hyjQ9JbRobnpT2wzzqTdJ50r4hoPfCVK2xA/FsMm7AqbrVewKtQmKw2xfrJPtGng4PwVBIqmJlif5AJEcN9Y=
+GH_EMAIL:
+  secure: NazKaLr1rGW1f2yQ7ehfNnTKu0JNauv8U9jk+l5hID+bdQae14VFbtaFqLJuDYDQKy6c7DobzVlGwdLB8sN02cf3xl+dsl6cMEBLknoMze/VttRox7Q+tJSpgOfi0IGi/l+9GffjUaVSWhDvZIzYGiP8O9RYIFp5dNyZjBZC368=
+GH_NAME:
+  secure: guBfEAFGptI31Ozr/9lK0MuKGGiDokjYe3xBO+F7s7IV90JzNfRbiHLWs0BrFEkILK7PpAjB+SBljW3H3X6dLXED0ogfsu38RcxdIVMSFrO1InuVdbG3pNyuGlhePbKoeBz/T2C4aa7CdiGWUDWfq3U72PbUosG2sMkaD0TsOT8=

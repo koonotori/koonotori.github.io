@@ -49,9 +49,3 @@ after_success:
     git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER )";
     git push github master:master | grep -v http;
     fi
-GH_TOKEN:
-  secure: Npoh5cs55HkjhanWF2wHnf7VvHGZMwewJ4O24hegnuK+/Y5L4TiloUJQaj871MaG1gNekQ/0+lV67VBGNDU3wK3hyjQ9JbRobnpT2wzzqTdJ50r4hoPfCVK2xA/FsMm7AqbrVewKtQmKw2xfrJPtGng4PwVBIqmJlif5AJEcN9Y=
-GH_EMAIL:
-  secure: NazKaLr1rGW1f2yQ7ehfNnTKu0JNauv8U9jk+l5hID+bdQae14VFbtaFqLJuDYDQKy6c7DobzVlGwdLB8sN02cf3xl+dsl6cMEBLknoMze/VttRox7Q+tJSpgOfi0IGi/l+9GffjUaVSWhDvZIzYGiP8O9RYIFp5dNyZjBZC368=
-GH_NAME:
-  secure: guBfEAFGptI31Ozr/9lK0MuKGGiDokjYe3xBO+F7s7IV90JzNfRbiHLWs0BrFEkILK7PpAjB+SBljW3H3X6dLXED0ogfsu38RcxdIVMSFrO1InuVdbG3pNyuGlhePbKoeBz/T2C4aa7CdiGWUDWfq3U72PbUosG2sMkaD0TsOT8=

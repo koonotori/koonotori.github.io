@@ -33,8 +33,8 @@ install:
   - cabal configure --disable-library-profiling --disable-tests --disable-library-coverage --disable-benchmarks --disable-split-objs
 
 before_script:
-  - git config --global user.name "redllamas"
-  - git config --global user.email "sam.ellard"
+  - git config --global user.name "$GH_NAME"
+  - git config --global user.email "$GH_EMAIL"
 
 script:
   - cabal run -j build
@@ -43,7 +43,7 @@ after_success:
   - if [[ "$TRAVIS_BRANCH" == "source" ]]; then
     cd _site;
     export REMOTE=$(git config remote.origin.url | sed 's/.*:\/\///');
-    git remote add github https://${GH_TOKEN}@${REMOTE};
+    git remote add github https://${GH_NAME}:${GH_TOKEN}@${REMOTE};
     git add --all;
     git status;
     git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER )";

@@ -1,31 +1,54 @@
+# NB: don't set `language: haskell` here
+
+# See also https://github.com/hvr/multi-ghc-travis for more information
+
 branches:
   only:
-  - source
+    - source
+
+env:
+  global:
+    - GH_TOKEN:
+      secure: Npoh5cs55HkjhanWF2wHnf7VvHGZMwewJ4O24hegnuK+/Y5L4TiloUJQaj871MaG1gNekQ/0+lV67VBGNDU3wK3hyjQ9JbRobnpT2wzzqTdJ50r4hoPfCVK2xA/FsMm7AqbrVewKtQmKw2xfrJPtGng4PwVBIqmJlif5AJEcN9Y=
+    - GH_EMAIL="sam.ellard@gmail.com"
+    - GH_NAME="redllamas"
+
   matrix:
-  - CABALVER=1.20 GHCVER=7.8.3
+    - CABALVER=1.20 GHCVER=7.8.3
+#    - CABALVER=1.22 GHCVER=7.10.1
+#    - CABALVER=head GHCVER=head
+
 before_install:
-- travis_retry sudo add-apt-repository -y ppa:hvr/ghc
-- travis_retry sudo apt-get update
-- travis_retry sudo apt-get install cabal-install-$CABALVER ghc-$GHCVER
-- export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
-- git submodule foreach --recursive 'git checkout master; git ls-files | grep -v README
-  | grep -v CNAME | xargs -r git rm'
+  - travis_retry sudo add-apt-repository -y ppa:hvr/ghc
+  - travis_retry sudo apt-get update
+  - travis_retry sudo apt-get install cabal-install-$CABALVER ghc-$GHCVER
+  - export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$PATH
+
+  - git submodule foreach --recursive 'git checkout master; git ls-files | grep -v README | grep -v CNAME | xargs -r git rm'
+
 install:
-- travis_retry cabal update
-- cabal sandbox init
-- cabal install --only-dependencies --disable-documentation
-- cabal configure --disable-library-profiling --disable-tests --disable-library-coverage
-  --disable-benchmarks --disable-split-objs
+  - travis_retry cabal update
+  - cabal sandbox init
+  - cabal install --only-dependencies --disable-documentation
+  - cabal configure --disable-library-profiling --disable-tests --disable-library-coverage --disable-benchmarks --disable-split-objs
+
 before_script:
-- git config --global user.name "redllamas"
-- git config --global user.email "sam.ellard@gmail.com"
+  - git config --global user.name "redllamas"
+  - git config --global user.email "sam.ellard"
+
 script:
-- cabal run -j build
+  - cabal run -j build
+
 after_success:
-- if [[ "$TRAVIS_BRANCH" == "source" ]]; then cd _site; export REMOTE=$(git config
-  remote.origin.url | sed 's/.*:\/\///'); git remote add github https://${GH_TOKEN}@${REMOTE};
-  git add --all; git status; git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER
-  )"; git push github master:master | grep -v http; fi
+  - if [[ "$TRAVIS_BRANCH" == "source" ]]; then
+    cd _site;
+    export REMOTE=$(git config remote.origin.url | sed 's/.*:\/\///');
+    git remote add github https://${GH_TOKEN}@${REMOTE};
+    git add --all;
+    git status;
+    git commit -m "Built by Travis ( build $TRAVIS_BUILD_NUMBER )";
+    git push github master:master | grep -v http;
+    fi
 GH_TOKEN:
   secure: Npoh5cs55HkjhanWF2wHnf7VvHGZMwewJ4O24hegnuK+/Y5L4TiloUJQaj871MaG1gNekQ/0+lV67VBGNDU3wK3hyjQ9JbRobnpT2wzzqTdJ50r4hoPfCVK2xA/FsMm7AqbrVewKtQmKw2xfrJPtGng4PwVBIqmJlif5AJEcN9Y=
 GH_EMAIL:

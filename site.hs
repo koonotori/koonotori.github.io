@@ -19,6 +19,7 @@ main = hakyllWith myConfiguration $ do
         route   idRoute
         compile compressCssCompiler
 
+    
     -- Copy files and images
     match ("files/*" .||. "files/*/*" .||. "files/*/*/*" .||. "images/*" .||. "images/*/*" .||. "images/*/*/*") $ do
         route   idRoute

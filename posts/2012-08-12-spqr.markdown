@@ -1,5 +1,7 @@
 ---
 title: S.P.Q.R.
+author: redllamas
+tags: old shit
 ---
 pigs
 Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl

@@ -1,9 +1,25 @@
 body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+    border-top: 3px solid #08b5e5;
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    background: white;
+    color: #555555;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+   
 }
+
+.page-wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 720px; }
+    @media screen and (max-width: 766px) {
+    .page-wrapper {
+    width: auto; } 
+  }
 
 div#header {
     border-bottom: 2px solid black;

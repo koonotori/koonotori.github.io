@@ -1,5 +1,7 @@
 ---
 title: Carpe Diem
+author: redllamas
+tags: old shit
 ---
 
 Fusce tortor quam, egestas in posuere quis, porttitor vel turpis. Donec

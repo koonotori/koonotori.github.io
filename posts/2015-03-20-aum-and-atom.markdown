@@ -1,7 +1,7 @@
 ---
 title: 20 years ago
 author: redllamas
-tags: dev, js, editor, march 20
+tags: dev, js, editor, march20
 ---
 
 Eleven days ago I guess I wrote this entry, worried about the Kurashicom interview.

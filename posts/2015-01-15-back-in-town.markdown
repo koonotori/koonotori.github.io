@@ -1,7 +1,7 @@
 ---
 title: happy new year
 author: redllamas
-tags: new year, 2015
+tags: newyear, 2015
 ---
 
 After two and a bit weeks, an update.

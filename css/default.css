@@ -1,25 +1,23 @@
 body {
-    border-top: 3px solid #08b5e5;
-    font-family: "Merriweather", Georgia, serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    background: white;
-    color: #555555;
-    -webkit-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased; 
-   
+    background-color: #fff;
+    font-family: "Merriweather", Helvetica, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 70em;
+    width: 100%;
+    padding: 1em;
 }
 
-.page-wrapper {
-    padding: 0 20px;
-    margin: 0 auto;
-    width: 720px; }
-    @media screen and (max-width: 766px) {
-    .page-wrapper {
-    width: auto; } 
-  }
+a {
+    color: #782725;
+}
+
+img {
+    border-width: 0;
+    max-width: 100%;
+    height: auto;
+}
+
 p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -126,36 +124,6 @@ body>nav menu a img.bigger {
     width: 24px;
 }
 
-div#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-div#header #navigation {
-    text-align: right;
-}
-
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
-}
-
 article header h1 {
     font-family: 'Arvo', serif;
     font-size: 22px;
@@ -180,16 +148,37 @@ article section>p {
     text-indent: 1em;
 }
 
-h1 {
-    font-size: 24px;
+code {
+    background-color: #D2D2D2;
+    display: inline-block;
+    padding: 0.5em;
+    text-indent: 0;
 }
 
-h2 {
-    font-size: 20px;
+#disqus_thread {
+    border-top: 1px solid black;
+    margin-top: 1em;
+    padding-top: 1em;
 }
 
-div.info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
+body>footer {
+    padding: 0.2em;
+    text-align: center;
+}
+
+#cc-icon {
+    float: right;
+    margin-right: 1em;
+    margin-top: -0.3em;
+}
+
+@media screen and (max-width: 800px) {
+    .posts-list li,.posts-list ul,.posts-list>h3 {
+        padding: 0;
+    }
+
+    body>nav menu a:after {
+        content:"\a\a";
+        white-space: pre;
+    }
 }

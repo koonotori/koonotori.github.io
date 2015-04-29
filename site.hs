@@ -120,11 +120,11 @@ tagsCtx tags =
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
-    { feedTitle       = "Keruspe's blag - RSS feed"
-    , feedDescription = "Various free software hacking stuff"
-    , feedAuthorName  = "Marc-Anroine Perennou"
-    , feedAuthorEmail = "Marc-Antoine@Perennou.com"
-    , feedRoot        = "http://www.imagination-land.org"
+    { feedTitle       = "コウノトリ :: a blog"
+    , feedDescription = "Sam Ellard's blog"
+    , feedAuthorName  = "Sam Ellard"
+    , feedAuthorEmail = "sam.ellard@gmail.com"
+    , feedRoot        = "http://koonotori.github.io"
     }
 
 -- Auxiliary compilers

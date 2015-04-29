@@ -1,64 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>コウノトリ - node.js make a little more sense</title>
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link href="../favicon.png" rel="shortcut icon">
-        <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="こおのとり" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>こおのとり - node.js make a little more sense</title>
+        <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
         <link href="http://fonts.googleapis.com/css?family=Merriweather:900italic,900,700italic,400italic,700,400,300italic,300" rel="stylesheet" type="text/css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../css/syntax.css" />
+        <link rel="alternate" type="application/rss+xml" title="こおのとり" href="../rss.xml" />
+        <link rel="shortcut icon" href="../favicon.png" />
     </head>
     <body>
-    <div class="page-wrapper">
         <header>
             <hgroup>
-                <h1><a href="../">コウノトリ</a></h1>
+                <h1><a href="../">こおのとり</a></h1>
                 <h6>-</h6>
-                <h2>redllamas' blog</h2>
+                <h2>sam_ellard's blog</h2>
             </hgroup>
         </header>
         <nav>
             <menu>
-                <a href="../"><!-- <img src="/images/home.png" alt="home"/> --> Home</a>
-                <a href="../posts.html"><!-- <img src="/images/list.png" alt="list"/> --> All posts</a>
-                <a href="../rss.xml"><!-- <img src="/images/rss.png" alt="rss"/> --> RSS</a>
+                <a href="../"><img src="../images/home.png" alt="home" /> Home</a>
+                <a href="../posts.html"><img src="../images/list.png" alt="list" /> All posts</a>
+                <a href="http://github.com/redllamas"><img class="bigger" src="../images/octocat.png" alt="octocat" /> My projects</a>
+                <a href="../rss.xml"><img src="../images/rss.png" alt="rss" /> RSS</a>
             </menu>
         </nav>
+        <section>
+            <article>
+                <header>
+                    <h1>node.js make a little more sense</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>January 16, 2015</strong></p>
+                    <p>Tagged as: <a href="../tags/node.html">node</a>, <a href="../tags/2015.html">2015</a>, <a href="../tags/javascript.html">javascript</a>.</p>
+                </header>
 
-
-        <!-- <div id="header">
-            <div id="logo">
-                <a href="/">コウノトリ</a>
-            </div>
-            <div id="navigation">
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/archive.html">Archive</a>
-            </div>
-        </div> -->
-        
-
-
-        <div id="content">
-
-            <div class="info">
-    Posted on January 16, 2015
-    
-        by redllamas
-    
-</div>
-
+                <section>
 <p>I’ve been working on <a href="http://nodeschool.io/">learnyounode</a> since last night, and after looking around to work out exactly what a callback is, I stumbled across this on <a href="https://github.com/maxogden/art-of-node#callbacks">maxogden</a>’s github page.</p>
 <blockquote>
 <p>Node does I/O in a way that is asynchronous which lets it handle lots of different things simultaneously. For example, if you go down to a fast food joint and order a cheeseburger they will immediately take your order and then make you wait around until the cheeseburger is ready. In the meantime they can take other orders and start cooking cheeseburgers for other people. Imagine if you had to wait at the register for your cheeseburger, blocking all other people in line from ordering while they cooked your burger! This is called blocking I/O because all I/O (cooking cheeseburgers) happens one at a time. Node, on the other hand, is non-blocking, which means it can cook many cheeseburgers at once.</p>
 </blockquote>
+                </section>
+            </article>
 
             <section class="social">
                 <!--<div class="g-plusone" data-align="right"></div>-->
@@ -66,11 +50,16 @@
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </section>
 
-        </div>
-        <div id="footer">
-            Site proudly generated by
-            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
-        </div>
-    </div>
+        </section>
+        <footer>
+            <p>
+                This  work is licensed under a
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+                    Creative Commons Attribution-ShareAlike 3.0 Unported License
+                    <img id="cc-icon" alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png">
+                </a>.
+            </p>
+        </footer>
     </body>
 </html>
+

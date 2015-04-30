@@ -1,6 +1,9 @@
 # NB: don't set `language: haskell` here
 
 # See also https://github.com/hvr/multi-ghc-travis for more information
+notifications:
+  email:
+    - sam.ellard@gmail.com
 
 branches:
   only:

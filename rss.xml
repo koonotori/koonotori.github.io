@@ -7,8 +7,55 @@
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Mon, 04 May 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 14 May 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Customising Android</title>
+    <link>http://koonotori.github.io/posts/2015-05-14-android.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>Customising Android</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>May 14, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/android.html">android</a>, <a href="http://koonotori.github.io/tags/theme.html">theme</a>, <a href="http://koonotori.github.io/tags/launcher.html">launcher</a>, <a href="http://koonotori.github.io/tags/icon.html">icon</a>.</p>
+                </header>
+
+                <section>
+<p>Today I customized my Android theme layout:</p>
+<ul>
+<li>Launcher: Smart Launcher</li>
+<li>Theme: Triflat</li>
+<li>Icon pack: Numix Circle</li>
+</ul>
+<div class="figure">
+<img src="http://koonotori.github.io../images/smartlauncher.png" />
+
+</div>
+<ul>
+<li>Launcher: Nova Launcher</li>
+<li>Theme: Triflat</li>
+<li>Icon pack: Numix Circle</li>
+</ul>
+<div class="figure">
+<img src="http://koonotori.github.io../images/novalauncher.png" />
+
+</div>
+<ul>
+<li>Launcher: Themer</li>
+<li>Theme: Hills</li>
+<li>Icon pack: Numix Circle</li>
+</ul>
+<div class="figure">
+<img src="http://koonotori.github.io../images/themerlauncher.png" />
+
+</div>
+<p>I’m liking the simplicity of Smart Launcher, but having just tried the Themer app, with a bunch of premade themes to choose from, I might find one I like.</p>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Thu, 14 May 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-05-14-android.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>Osaka job</title>
     <link>http://koonotori.github.io/posts/2015-05-04-job.html</link>
     <description><![CDATA[            <article>

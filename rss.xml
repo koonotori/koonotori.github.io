@@ -7,8 +7,31 @@
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 14 May 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Tue, 26 May 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Updated Twitter</title>
+    <link>http://koonotori.github.io/posts/2015-05-26-twitter.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>Updated Twitter</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>May 26, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/twitter.html">twitter</a>.</p>
+                </header>
+
+                <section>
+<a class="twitter-timeline" href="https://twitter.com/smllrd" data-widget-id="603048845346414592"><span class="citation">@smllrdさんのツイート</span></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<p>a test to see if my widget works.</p>
+<p>also, renamed from <span class="citation">@samellard</span> to <span class="citation">@smllrd</span></p>
+<p>hopefully it does work…</p>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Tue, 26 May 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-05-26-twitter.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>Customising Android</title>
     <link>http://koonotori.github.io/posts/2015-05-14-android.html</link>
     <description><![CDATA[            <article>

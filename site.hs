@@ -120,7 +120,7 @@ tagsCtx tags =
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
-    { feedTitle       = "コウノトリ :: a blog"
+    { feedTitle       = "こおのとり :: a blog"
     , feedDescription = "Sam Ellard's blog"
     , feedAuthorName  = "Sam Ellard"
     , feedAuthorEmail = "sam.ellard@gmail.com"

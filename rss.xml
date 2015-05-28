@@ -2,13 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>コウノトリ :: a blog</title>
+        <title>こおのとり :: a blog</title>
         <link>http://koonotori.github.io</link>
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
         <lastBuildDate>Thu, 28 May 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>リニューアル</title>
+    <link>http://koonotori.github.io/posts/2015-05-28-redesign.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>リニューアル</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>May 28, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/site.html">site</a>, <a href="http://koonotori.github.io/tags/hakyll.html">hakyll</a>.</p>
+                </header>
+
+                <section>
+<p>need to think of a few ideas for renewing the blog design.</p>
+<p>it should probably take into account japanese text.</p>
+<p>laterrrrrr</p>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Thu, 28 May 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-05-28-redesign.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>Progress on finding a job</title>
     <link>http://koonotori.github.io/posts/2015-05-28-progress.html</link>
     <description><![CDATA[            <article>

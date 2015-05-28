@@ -19,9 +19,10 @@
                 </header>
 
                 <section>
-<p>need to think of a few ideas for renewing the blog design.</p>
-<p>it should probably take into account japanese text.</p>
-<p>laterrrrrr</p>
+<p>Renewed a little bit.</p>
+<p>Got colour inspiration from <a href="http://benw.me">Ben Woodward</a>’s Rails blog, and a little help with border shading from <a href="http://stackoverflow.com/a/18212020">this post</a> on StackOverflow.</p>
+<p>Still a few things to iron out, but minimal is okay for now.</p>
+<p>Should make a balls out web dev portfolio type thing soon, though.</p>
                 </section>
             </article>
 ]]></description>
@@ -56,6 +57,31 @@
 ]]></description>
     <pubDate>Thu, 28 May 2015 00:00:00 UT</pubDate>
     <guid>http://koonotori.github.io/posts/2015-05-28-progress.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
+    <title>Priorities</title>
+    <link>http://koonotori.github.io/posts/2015-05-28-priorities.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>Priorities</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>May 28, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/life.html">life</a>, <a href="http://koonotori.github.io/tags/work.html">work</a>.</p>
+                </header>
+
+                <section>
+<ol style="list-style-type: decimal">
+<li>Quit this shit job</li>
+<li>Move to Kansai</li>
+<li>New job</li>
+<li>Start to plan the W</li>
+<li>Driving licence</li>
+</ol>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Thu, 28 May 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-05-28-priorities.html</guid>
     <dc:creator>Sam Ellard</dc:creator>
 </item>
 <item>

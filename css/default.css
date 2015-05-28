@@ -9,7 +9,11 @@ body {
 }
 
 a {
-    color: #782725;
+    color: #dc322f;
+}
+
+a:hover {
+    color:#333;
 }
 
 img {
@@ -27,21 +31,25 @@ p {
 }
 
 ::selection {
-    background-color: #AFAFAF;
+    background-color: #dc322f;
+    color: #fff;
 }
 
 ::-moz-selection {
-    background-color: #AFAFAF;
+    background-color: #dc322f;
+    color: #fff;
 }
 
 body>header>hgroup {
     font-family: 'Arvo', serif;
     padding: 1em;
+    text-align: center;
 }
 
 body>header>hgroup>h1 {
     display: inline;
     font-size: 26px;
+    letter-spacing: 1.1em;
 }
 
 body>header>hgroup>h2 {
@@ -57,7 +65,7 @@ body>header>hgroup>h6 {
 }
 
 body>header a, body>header a:hover {
-    color: black;
+    color: #dc322f;
     text-decoration: none;
 }
 
@@ -84,9 +92,17 @@ body>header a, body>header a:hover {
 }
 
 article>header {
-    border-bottom: 1px solid;
     margin-bottom: 1.5em;
-    padding-bottom: 1em;
+
+}
+
+article>header:after {
+    content:"";
+    height:1px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(221,221,221,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-top:1em;
+    margin-bottom:1em;
 }
 
 article>header p {
@@ -99,18 +115,22 @@ article>header p.by {
 }
 
 body>nav, body>footer {
-    background-color: #BBBBBB;
+    /*background-color: #BBBBBB;*/
     padding: 0.5em 0;
 }
 
+body>nav menu {
+    text-align: center;
+}
+
 body>nav menu a {
-    color: black;
+    color: #dc322f;
     padding: 0 1.5em;
     text-decoration: none;
 }
 
 body>nav menu a:hover {
-    color: #555555;
+    color: #333;
     text-decoration: none;
 }
 
@@ -148,6 +168,19 @@ article section>p {
     text-indent: 1em;
 }
 
+.posts-list {
+    padding:0 20px;
+}
+
+.posts-list:before, .posts-list:after {
+    content:"";
+    height:1px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(221,221,221,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 code {
     background-color: #D2D2D2;
     display: inline-block;
@@ -162,10 +195,12 @@ code {
     padding:20px 0;
 }
 
-#disqus_thread {
-    border-top: 1px solid black;
+#disqus_thread:before {
+    content:"";
+    height:1px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(221,221,221,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
     margin-top: 1em;
-    padding-top: 1em;
 }
 
 body>footer {
@@ -180,12 +215,15 @@ body>footer {
 }
 
 @media screen and (max-width: 800px) {
-    .posts-list li,.posts-list ul,.posts-list>h3 {
+    body>nav menu,.posts-list li,.posts-list ul,.posts-list>h3 {
         padding: 0;
     }
-
     body>nav menu a:after {
         content:"\a\a";
+        white-space: pre;
+    }
+    #cc-icon:before {
+        content:"\n\n";
         white-space: pre;
     }
 }

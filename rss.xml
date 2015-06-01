@@ -7,8 +7,36 @@
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Fri, 29 May 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jun 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Ruby, work and shit</title>
+    <link>http://koonotori.github.io/posts/2015-06-01-koans-etc.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>Ruby, work and shit</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>June  1, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/work.html">work</a>, <a href="http://koonotori.github.io/tags/ruby.html">ruby</a>, <a href="http://koonotori.github.io/tags/code.html">code</a>.</p>
+                </header>
+
+                <section>
+<p>Completed the Ruby Koans earlier while I was supposed to be working.</p>
+<div class="figure">
+<img src="http://koonotori.github.io../images/koans_complete.png" title="dat feels" alt="dat feels" />
+<p class="caption">dat feels</p>
+</div>
+<p>I guess I should probably study something more seriously. I kept googling to a minumum, but after taking a big break between completing the exercises, I had to get a few things freshened up.</p>
+<p>Was down in Kansai again over the weekend, it was nice to see a lot of old friends.</p>
+<p>Not so fun coming back up to work at 5am, though.</p>
+<p>Still, I’m happy I got to spend time with Kasumi from Fri-Mon.</p>
+<p>More later.</p>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Mon, 01 Jun 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-06-01-koans-etc.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>Escape plans</title>
     <link>http://koonotori.github.io/posts/2015-05-29-escape-plans.html</link>
     <description><![CDATA[            <article>

@@ -123,25 +123,30 @@ body>nav, body>footer {
 
 body>nav menu {
     text-align: center;
+    padding-left:0;
 }
 
-body>nav menu a {
+body>nav menu a,
+#sociallinks a {
     color: #dc322f;
     padding: 0 1.5em;
     text-decoration: none;
 }
 
-body>nav menu a:hover {
+body>nav menu a:hover,
+#sociallinks a:hover {
     color: #333;
     text-decoration: none;
 }
 
-body>nav menu a img {
+body>nav menu a img,
+#sociallinks a img {
     vertical-align: -18%;
     width: 20px;
 }
 
-body>nav menu a img.bigger {
+body>nav menu a img.bigger,
+#sociallinks a img.bigger {
     vertical-align: -30%;
     width: 24px;
 }
@@ -204,6 +209,9 @@ code {
     display: block;*/
     margin-top: 1em;
 }
+section.post-body {
+    margin-bottom:1.5em;
+}
 
 body>footer {
     padding: 0.2em;
@@ -216,6 +224,14 @@ body>footer {
     margin-top: -0.3em;
 }
 
+#sociallinks {
+    text-align: right;
+}
+
+#sociallinks a {
+    padding: 0 1em;
+    }
+
 @media screen and (max-width: 800px) {
     body>nav menu,.posts-list li,.posts-list ul,.posts-list>h3 {
         padding: 0;
@@ -227,5 +243,8 @@ body>footer {
     #cc-icon:before {
         content:"\n\n";
         white-space: pre;
+    }
+    #sociallinks {
+    text-align: center;
     }
 }

@@ -29,6 +29,7 @@
             <menu>
                 <a href="http://twitter.com/smllrd"><img src="../images/twttr.png" alt="Twitter" /> Twitter</a>
                 <a href="http://facebook.com/sam.ellard.9"><img src="../images/fb.png" alt="Facebook" /> Facebook</a>
+                <a href="https://plus.google.com/105813830185481878263/"><img src="../images/gp.png" alt="Google+" /> Google+</a>
             </menu>
         </nav>
         <section class="content-main">
@@ -39,10 +40,26 @@
                     <p>Tagged as: <a href="../tags/test.html">test</a>.</p>
                 </header>
 
-                <section>
+                <section class="post-body">
 <p>日本語 OK</p>
 <p>English OK</p>
 <p><a href="http://sam.jetsets.jp">Link</a> OK</p>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2014-12-05-this_is_a_test.html" target="_blank"><img src="../images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2014-12-05-this_is_a_test.html" target="_blank"><img src="../images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2014-12-05-this_is_a_test.html" target="_blank"><img src="../images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2014-12-05-this_is_a_test.html',url));}})})();
+                  </script>
                 </section>
             </article>
 

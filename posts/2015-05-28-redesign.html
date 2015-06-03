@@ -29,6 +29,7 @@
             <menu>
                 <a href="http://twitter.com/smllrd"><img src="../images/twttr.png" alt="Twitter" /> Twitter</a>
                 <a href="http://facebook.com/sam.ellard.9"><img src="../images/fb.png" alt="Facebook" /> Facebook</a>
+                <a href="https://plus.google.com/105813830185481878263/"><img src="../images/gp.png" alt="Google+" /> Google+</a>
             </menu>
         </nav>
         <section class="content-main">
@@ -39,11 +40,27 @@
                     <p>Tagged as: <a href="../tags/site.html">site</a>, <a href="../tags/hakyll.html">hakyll</a>.</p>
                 </header>
 
-                <section>
+                <section class="post-body">
 <p>Renewed a little bit.</p>
 <p>Got colour inspiration from <a href="http://benw.me">Ben Woodward</a>’s Rails blog, and a little help with border shading from <a href="http://stackoverflow.com/a/18212020">this post</a> on StackOverflow.</p>
 <p>Still a few things to iron out, but minimal is okay for now.</p>
 <p>Should make a balls out web dev portfolio type thing soon, though.</p>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2015-05-28-redesign.html" target="_blank"><img src="../images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2015-05-28-redesign.html" target="_blank"><img src="../images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2015-05-28-redesign.html" target="_blank"><img src="../images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2015-05-28-redesign.html',url));}})})();
+                  </script>
                 </section>
             </article>
 

@@ -29,6 +29,7 @@
             <menu>
                 <a href="http://twitter.com/smllrd"><img src="../images/twttr.png" alt="Twitter" /> Twitter</a>
                 <a href="http://facebook.com/sam.ellard.9"><img src="../images/fb.png" alt="Facebook" /> Facebook</a>
+                <a href="https://plus.google.com/105813830185481878263/"><img src="../images/gp.png" alt="Google+" /> Google+</a>
             </menu>
         </nav>
         <section class="content-main">
@@ -39,7 +40,7 @@
                     <p>Tagged as: <a href="../tags/node.html">node</a>, <a href="../tags/2015.html">2015</a>, <a href="../tags/javascript.html">javascript</a>, <a href="../tags/ruby.html">ruby</a>.</p>
                 </header>
 
-                <section>
+                <section class="post-body">
 <p>January has gone by in a flash, and oh shit, I need to submit my application for the Kurashicom job. I’ve written the essay, just hope it’s not complete bollocks.</p>
 <p>Since then, I’ve finished learnyounode, stream-adventure, and I’ve been trying to complete the Ruby Koans series too.</p>
 <p>I have to complete the application for Kurashicom tonight, and send it off by tomorrow. I hope I can get it done.</p>
@@ -49,6 +50,22 @@
 <li>back home for dinner and to work on the application</li>
 <li>try to sort out receipts monthly and also by category, then calculate the numbers</li>
 </ul>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2015-02-12-etc.html" target="_blank"><img src="../images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2015-02-12-etc.html" target="_blank"><img src="../images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2015-02-12-etc.html" target="_blank"><img src="../images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2015-02-12-etc.html',url));}})})();
+                  </script>
                 </section>
             </article>
 

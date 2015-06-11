@@ -7,8 +7,44 @@
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 02 Jun 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Jun 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>when will it end?</title>
+    <link>http://koonotori.github.io/posts/2015-06-10-when-will-it-end.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>when will it end?</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>June 10, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/work.html">work</a>, <a href="http://koonotori.github.io/tags/shite.html">shite</a>.</p>
+                </header>
+
+                <section class="post-body">
+<p>another wednesday, another work day at jetshits</p>
+<p>when the fuck is he going to lemme go, the cunt</p>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2015-06-10-when-will-it-end.html" target="_blank"><img src="http://koonotori.github.io/images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2015-06-10-when-will-it-end.html" target="_blank"><img src="http://koonotori.github.io/images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2015-06-10-when-will-it-end.html" target="_blank"><img src="http://koonotori.github.io/images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2015-06-10-when-will-it-end.html',url));}})})();
+                  </script>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Wed, 10 Jun 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-06-10-when-will-it-end.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>Shit, shit and shit</title>
     <link>http://koonotori.github.io/posts/2015-06-02-guchi.html</link>
     <description><![CDATA[            <article>

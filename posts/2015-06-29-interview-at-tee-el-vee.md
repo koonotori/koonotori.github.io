@@ -1,8 +1,9 @@
 ---
 title: interview at tee-el-vee
 author: redllamas
-tags:
+tags: work
 ---
+
 some points to remember from the interview today at a certain steam valve company today:
 
   - desired salary of 300000/month should be alright

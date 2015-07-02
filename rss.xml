@@ -7,8 +7,60 @@
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 23 Jun 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jun 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>interview at tee-el-vee</title>
+    <link>http://koonotori.github.io/posts/2015-06-29-interview-at-tee-el-vee.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>interview at tee-el-vee</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>June 29, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/work.html">work</a>.</p>
+                </header>
+
+                <section class="post-body">
+<p>some points to remember from the interview today at a certain steam valve company today:</p>
+<ul>
+<li>desired salary of 300000/month should be alright
+<ul>
+<li>including commutation</li>
+<li>some housing allowance</li>
+<li>annual return home allowance</li>
+</ul></li>
+<li>one more interview after the result, likely to know during this week</li>
+<li>next interview would be probably with 課長</li>
+<li>work involves mainly document handling and translation</li>
+<li>would need to really brush up on technical vocab but I was able to demonstrate a technical understanding to some degree</li>
+<li>Takata-san did stress that the commute from Ashiya every day won’t be easy, and that will be a sticking point for the next interview</li>
+<li>Joel said that he used InDesign to create the SDS (Specification Description Sheets) and Illustrator to create the pamphlets.</li>
+<li>they create an international English version from the original Japanese documentation, then translate that the following ways: if North American English, then from the International, if UK English then from the International, if French or German then from the UK English, if any other languages then from the International</li>
+</ul>
+<p>also need to pay 30000 or 35000 to kasumi for rent plus some more for bills?</p>
+<p>going to meet yoshi tomorrow with inamura san to discuss the position, but i’m worried he thinks i’ve already agreed. need to make sure to ask for a contract, can’t get fucked again</p>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2015-06-29-interview-at-tee-el-vee.html" target="_blank"><img src="http://koonotori.github.io/images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2015-06-29-interview-at-tee-el-vee.html" target="_blank"><img src="http://koonotori.github.io/images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2015-06-29-interview-at-tee-el-vee.html" target="_blank"><img src="http://koonotori.github.io/images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2015-06-29-interview-at-tee-el-vee.html',url));}})})();
+                  </script>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Mon, 29 Jun 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-06-29-interview-at-tee-el-vee.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>finally made it</title>
     <link>http://koonotori.github.io/posts/2015-06-23-finally-made-it.html</link>
     <description><![CDATA[            <article>

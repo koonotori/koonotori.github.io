@@ -7,8 +7,78 @@
         <description><![CDATA[Sam Ellard's blog]]></description>
         <atom:link href="http://koonotori.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 15 Jul 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Jan 2016 00:00:00 UT</lastBuildDate>
         <item>
+    <title>let's see if we can update this...</title>
+    <link>http://koonotori.github.io/posts/2016-01-25-lets-see-if-we-can-update-this....html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>let's see if we can update this...</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>January 25, 2016</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/compulsory-tag.html">compulsory-tag</a>.</p>
+                </header>
+
+                <section class="post-body">
+<p>I think this needs a body</p>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2016-01-25-lets-see-if-we-can-update-this....html" target="_blank"><img src="http://koonotori.github.io/images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2016-01-25-lets-see-if-we-can-update-this....html" target="_blank"><img src="http://koonotori.github.io/images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2016-01-25-lets-see-if-we-can-update-this....html" target="_blank"><img src="http://koonotori.github.io/images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2016-01-25-lets-see-if-we-can-update-this....html',url));}})})();
+                  </script>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Mon, 25 Jan 2016 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2016-01-25-lets-see-if-we-can-update-this....html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
+    <title>first new post in a while</title>
+    <link>http://koonotori.github.io/posts/2015-11-12-first-new-post-in-a-while.html</link>
+    <description><![CDATA[            <article>
+                <header>
+                    <h1>first new post in a while</h1>
+                    <p class="by">by <em>redllamas</em> on <strong>November 12, 2015</strong></p>
+                    <p>Tagged as: <a href="http://koonotori.github.io/tags/work.html">work</a>, <a href="http://koonotori.github.io/tags/life.html">life</a>.</p>
+                </header>
+
+                <section class="post-body">
+<p>I haven’t written here in a while but things are okay. work is long tings but I’m learning. Have to write some speech by Monday and translate a bunch of stuff.</p>
+                </section>
+                <section class="social">
+                  <div id="sociallinks">
+                    <a href="https://twitter.com/home?status=/posts/2015-11-12-first-new-post-in-a-while.html" target="_blank"><img src="http://koonotori.github.io/images/twttr.png" alt="Twitter" /> Tweet this</a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=/posts/2015-11-12-first-new-post-in-a-while.html" target="_blank"><img src="http://koonotori.github.io/images/fb.png" alt="Facebook" /> Like this</a>
+                    <a href="https://plus.google.com/share?url=/posts/2015-11-12-first-new-post-in-a-while.html" target="_blank"><img src="http://koonotori.github.io/images/gp.png" alt="Google+" /> Share on G+</a>
+                  </div>
+                  <script>
+                  (function(){window.addEventListener("DOMContentLoaded",function(){
+                      var url=document.location;
+                      var links=document.getElementById("sociallinks")
+                                        .getElementsByTagName('a');
+                      for (var i=0;i!=links.length;i++){
+                          links[i].setAttribute("href",
+                              links[i].href.replace('/posts/2015-11-12-first-new-post-in-a-while.html',url));}})})();
+                  </script>
+                </section>
+            </article>
+]]></description>
+    <pubDate>Thu, 12 Nov 2015 00:00:00 UT</pubDate>
+    <guid>http://koonotori.github.io/posts/2015-11-12-first-new-post-in-a-while.html</guid>
+    <dc:creator>Sam Ellard</dc:creator>
+</item>
+<item>
     <title>final interview and calendar</title>
     <link>http://koonotori.github.io/posts/2015-07-15-final-interview-and-calendar.html</link>
     <description><![CDATA[            <article>

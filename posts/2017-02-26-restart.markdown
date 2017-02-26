@@ -1,0 +1,7 @@
+---
+title: restart
+author: redllamas
+tags: 2017, blog
+---
+Thinking I should get back into blog and learning haskell etc.
+Read on the train? Need to fix my terrible concentration span
